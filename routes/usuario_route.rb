@@ -6,6 +6,10 @@ require_relative '../models/usuario'
 
 db = DataBase.new
 
+post "/usuario/save" do
+  #
+end
+
 get "/usuario" do
   begin
     db.conectar
@@ -17,4 +21,16 @@ get "/usuario" do
   ensure
     db.desconectar
   end
+end
+
+get "/usuario/:id" do
+  #
+end
+
+put "/usuario/:id" do
+  #
+end
+
+delete "/usuario/:id" do
+  #
 end
