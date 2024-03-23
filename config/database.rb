@@ -12,7 +12,7 @@ class DataBase
   def initialize
     @servidor = "localhost"
     @usuario = "root"
-    @clave = ""
+    @clave = "root"
     @base_de_datos = "dbsinatramysql"
     @puerto = 3306
   end
