@@ -20,10 +20,10 @@ class DataBase
   def conectar
     ActiveRecord::Base.establish_connection(
       adapter: "mysql2",
-      database: self.base_de_datos,
+      host: self.servidor,
       username: self.usuario,
       password: self.clave,
-      host: self.servidor,
+      database: self.base_de_datos,
       port: self.puerto
     ).connection
   end
